@@ -1,0 +1,154 @@
+{
+  "courses": [
+    {
+      "id": 1,
+      "title": "Guitar Basics",
+      "slug": "guitar-basics",
+      "description": "Learn the fundamentals of playing guitar from scratch.",
+      "price": 49.99,
+      "instructor": "John Doe",
+      "isFeatured": true,
+      "image": "https://example.com/guitar-basics.jpg"
+    },
+    {
+      "id": 2,
+      "title": "Piano for Beginners",
+      "slug": "piano-for-beginners",
+      "description": "Start your journey into piano playing with this beginner-friendly course.",
+      "price": 59.99,
+      "instructor": "Jane Smith",
+      "isFeatured": false,
+      "image": "https://example.com/piano-for-beginners.jpg"
+    },
+    {
+      "id": 3,
+      "title": "Singing Techniques",
+      "slug": "singing-techniques",
+      "description": "Improve your singing voice and master various vocal techniques.",
+      "price": 39.99,
+      "instructor": "Alex Johnson",
+      "isFeatured": true,
+      "image": "https://example.com/singing-techniques.jpg"
+    },
+    {
+      "id": 4,
+      "title": "Music Theory Fundamentals",
+      "slug": "music-theory-fundamentals",
+      "description": "Understand the basics of music theory to enhance your musical skills.",
+      "price": 29.99,
+      "instructor": "Emily Wilson",
+      "isFeatured": false,
+      "image": "https://example.com/music-theory-fundamentals.jpg"
+    },
+    {
+      "id": 5,
+      "title": "Drumming Essentials",
+      "slug": "drumming-essentials",
+      "description": "Get started with drumming and learn essential beats and rhythms.",
+      "price": 49.99,
+      "instructor": "Michael Brown",
+      "isFeatured": true,
+      "image": "https://example.com/drumming-essentials.jpg"
+    },
+    {
+      "id": 6,
+      "title": "Songwriting Workshop",
+      "slug": "songwriting-workshop",
+      "description": "Unlock your creativity and learn the art of songwriting.",
+      "price": 69.99,
+      "instructor": "Sophia Martinez",
+      "isFeatured": false,
+      "image": "https://example.com/songwriting-workshop.jpg"
+    },
+    {
+      "id": 7,
+      "title": "Music Production Basics",
+      "slug": "music-production-basics",
+      "description": "Learn the fundamentals of music production and create your own tracks.",
+      "price": 79.99,
+      "instructor": "David Clark",
+      "isFeatured": true,
+      "image": "https://example.com/music-production-basics.jpg"
+    },
+    {
+      "id": 8,
+      "title": "Violin Masterclass",
+      "slug": "violin-masterclass",
+      "description": "Master the violin with this comprehensive masterclass for all levels.",
+      "price": 89.99,
+      "instructor": "Emma Taylor",
+      "isFeatured": false,
+      "image": "https://example.com/violin-masterclass.jpg"
+    },
+    {
+      "id": 9,
+      "title": "Bass Guitar Techniques",
+      "slug": "bass-guitar-techniques",
+      "description": "Learn various techniques and styles for playing bass guitar.",
+      "price": 59.99,
+      "instructor": "William Rodriguez",
+      "isFeatured": true,
+      "image": "https://example.com/bass-guitar-techniques.jpg"
+    },
+    {
+      "id": 10,
+      "title": "Electronic Music Production",
+      "slug": "electronic-music-production",
+      "description": "Explore the world of electronic music production and create your own beats.",
+      "price": 99.99,
+      "instructor": "Olivia Moore",
+      "isFeatured": false,
+      "image": "https://example.com/electronic-music-production.jpg"
+    },
+    {
+      "id": 11,
+      "title": "Flute Basics",
+      "slug": "flute-basics",
+      "description": "Begin your journey into playing the flute with this beginner course.",
+      "price": 39.99,
+      "instructor": "Daniel Evans",
+      "isFeatured": true,
+      "image": "https://example.com/flute-basics.jpg"
+    },
+    {
+      "id": 12,
+      "title": "Harmony and Counterpoint",
+      "slug": "harmony-and-counterpoint",
+      "description": "Deepen your understanding of harmony and counterpoint in music.",
+      "price": 69.99,
+      "instructor": "Ava Johnson",
+      "isFeatured": false,
+      "image": "https://example.com/harmony-counterpoint.jpg"
+    },
+    {
+      "id": 13,
+      "title": "Music History Overview",
+      "slug": "music-history-overview",
+      "description": "Explore the history of music from ancient times to the present day.",
+      "price": 49.99,
+      "instructor": "Lucas Smith",
+      "isFeatured": true,
+      "image": "https://example.com/music-history.jpg"
+    },
+    {
+      "id": 14,
+      "title": "Gospel Choir Singing",
+      "slug": "gospel-choir-singing",
+      "description": "Experience the joy of singing gospel music in a choir setting.",
+      "price": 59.99,
+      "instructor": "Isabella Garcia",
+      "isFeatured": false,
+      "image": "https://example.com/gospel-choir.jpg"
+    },
+    {
+      "id": 15,
+      "title": "Jazz Improvisation Techniques",
+      "slug": "jazz-improvisation-techniques",
+      "description": "Learn improvisational techniques for playing jazz music.",
+      "price": 79.99,
+      "instructor": "Nathan Anderson",
+      "isFeatured": true,
+      "image": "https://example.com/jazz-improvisation.jpg"
+    }
+  ]
+}
