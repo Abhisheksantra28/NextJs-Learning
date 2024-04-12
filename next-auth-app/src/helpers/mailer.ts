@@ -18,15 +18,19 @@ export const sendEmail = async ({
 
     if (emailType === "VERIFY") {
       await User.findByIdAndUpdate(userId, {
-        verifyToken: hashedToken,
-        verifyTokenexpiry: Date.now() + 3600000,
+        $set: {
+          verifyToken: hashedToken,
+          verifyTokenExpiry: Date.now() + 3600000,
+        },
       });
     }
 
     if (emailType === "RESET") {
       await User.findByIdAndUpdate(userId, {
-        forgotPasswordtoken: hashedToken,
-        forgotPasswordtokenExpiry: Date.now() + 3600000,
+        $set: {
+          forgotPasswordtoken: hashedToken,
+          forgotPasswordtokenExpiry: Date.now() + 3600000,
+        },
       });
     }
 
@@ -44,7 +48,9 @@ export const sendEmail = async ({
       to: email, // list of receivers
       subject:
         emailType === "VERIFY" ? "Verify your email" : "Reset your password", // Subject line
-      html: `<p> Click <a href="${process.env.DOMAIN}/verifyemail?token=${hashedToken}">here</a> to ${
+      html: `<p> Click <a href="${
+        process.env.DOMAIN
+      }/verifyemail?token=${hashedToken}">here</a> to ${
         emailType === "VERIFY" ? "Verify your email" : "Reset your password"
       }
       or copy paste the link below in your browser.
