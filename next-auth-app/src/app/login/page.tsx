@@ -9,17 +9,28 @@ const Page = () => {
     email: "",
     password: "",
   });
-
+  const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  const onSignup = async () => {};
+  const onSignin = async () => {
+    try {
+      setLoading(true);
+      const response = await axios.post("/api/users/login", user);
+      console.log("Signin success", response.data);
+      router.push("/");
+    } catch (error: any) {
+      console.error(error.message);
+    } finally {
+      setLoading(false);
+    }
+  };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen py-2  text-white">
+    <div className="flex flex-col items-center justify-center min-h-screen py-2 text-white">
       <h1 className="text-5xl">Login</h1>
       <hr className="my-4 w-1/4 border border-white" />
 
-      <form className="w-80">
+      <form className="w-80 text-black">
         <div className="mb-4">
           <label htmlFor="email" className="block text-sm font-medium">
             Email:
@@ -44,16 +55,16 @@ const Page = () => {
             value={user.password}
             onChange={(e) => setUser({ ...user, password: e.target.value })}
             placeholder="Enter your password"
-            className="mt-1 p-2 w-full focus:outline-none border rounded-md"
+            className="mt-1 p-2 w-full border focus:outline-none rounded-md"
           />
         </div>
 
         <button
           type="button" // Change to "submit" if using a form submit
-          onClick={onSignup}
+          onClick={onSignin}
           className="bg-blue-500 text-white p-2 rounded-md"
         >
-          Sign Up
+          Sign In
         </button>
       </form>
 
